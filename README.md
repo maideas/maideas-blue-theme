@@ -1,2 +1,3 @@
 # maideas-theme
-Jekyll theme
+
+Maideas Jekyll theme
