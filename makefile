@@ -18,6 +18,7 @@ check: clean
 clean: Gemfile
 	bundle exec jekyll clean
 	-rm -rf .jekyll-cache
+	-rm -f Gemfile.lock
 
 Gemfile:
 	-rm -f $@
