@@ -4,7 +4,9 @@
     <meta charset='utf-8'>
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="google-site-verification" content="1yU377-5avAh8CpOrU11zN6SuYYP0mq6g_wA7BP5NtM" />
+    {% if google-site-verification-key %}
+    <meta name="google-site-verification" content="{% google-site-verification-key %}" />
+    {% endif %}
     {% if page.tags %}
     <meta itemprop="keywords" content="{{ page.tags }}" />
     {% endif %}
