@@ -4,9 +4,16 @@ $(document).ready(function() {
   /* make image paragraph styling possible */
   $("img").each(function() {
     var par = $(this).parent();
+    var parpar = $(this).parent().parent();
     if (par.is("p")) {
       par.before('<div class="clearfix"></div>');
       par.addClass('img');
+    }
+    if (par.is("a")) {
+      if (parpar.is("p")) {
+        parpar.before('<div class="clearfix"></div>');
+        parpar.addClass('img');
+      }
     }
   });
 
