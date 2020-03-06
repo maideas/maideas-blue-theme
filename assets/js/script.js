@@ -17,11 +17,6 @@ $(document).ready(function() {
     }
   });
 
-  /* handle small/large image click event */
-  $("p.img").on('click', function() {
-    $(this).toggleClass("large-img");
-  });
-
   /* add top-ul for CSS styling and "span" wrap top li texts */
   $("ul").each(function() {
     if (!$(this).parent().is("li")) {
