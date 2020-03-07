@@ -31,9 +31,6 @@
     <div id="content-wrapper" class="clearfix">
       <section id="content" class="clearfix">
         {{ content }}
-        <hr>
-        {{ site | jsonify }}
-        <hr>
       </section>
       <aside id="sidebar">
         <nav>
@@ -42,12 +39,9 @@
             <ul class="toc-categories">
               <li>{{ cat.name }}
                 <ul class="toc-cat-pages">
-                  {% for page_name in cat.page_names %}{% for page in site.pages %}
-                    <b>{{ page_name }}|{{ page.name }}</b><br>
-{% if page_name == page.name %}
+                  {% for page_name in cat.page_names %}{% for page in site.pages %}{% if page_name == page.name %}
                     <li><a href="{{ site.github.baseurl }}{{ page.url }}">{{ page.title }}</a></li>
-{% endif %}
-                  {% endfor %}{% endfor %}
+                  {% endif %}{% endfor %}{% endfor %}
                   {% for page_name in cat.docs_names %}{% for page in site.github.public_repositories %}{% if page_name == page.name %}
                     <li><a href="https://{{ site.github.owner_name }}.github.io/{{ page.name }}">{{ page.description }}</a></li>
                   {% endif %}{% endfor %}{% endfor %}
