@@ -31,7 +31,9 @@
     <div id="content-wrapper" class="clearfix">
       <section id="content" class="clearfix">
         {{ content }}
-        {{ site }}
+        <hr>
+        {{ site | jsonify }}
+        <hr>
       </section>
       <aside id="sidebar">
         <nav>
