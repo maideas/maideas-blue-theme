@@ -43,6 +43,7 @@
               <li>{{ cat.name }}
                 <ul class="toc-cat-pages">
                   {% for page_name in cat.page_names %}{% for page in site.pages %}
+                    <b>{{ page_name }}|{{ page.name }}</b><br>
                     <li><a href="{{ site.github.baseurl }}{{ page.url }}">{{ page.title }}</a></li>
                   {% endfor %}{% endfor %}
                   {% for page_name in cat.docs_names %}{% for page in site.github.public_repositories %}{% if page_name == page.name %}
