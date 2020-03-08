@@ -53,7 +53,7 @@ html {
 header {
     position: sticky;
     top: 0px;
-    height: 70px;
+    height: calc(var(--h1size) * 5.0 / 3.0);
     z-index: 100;
     opacity: 0.9;
 
@@ -70,7 +70,7 @@ header {
         margin-right: 15px;
     }
     #header {
-        margin: calc(var(--h1size) / 3) 0;
+        margin: calc(var(--h1size) / 3.0) 0;
     }
 }
 
