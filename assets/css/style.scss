@@ -58,19 +58,19 @@ header {
     opacity: 0.9;
 
     h1, a {
-        font-size: 40px;
+        font-size: var(--h1size);
         font-weight: 700;
         line-height: 1em;
         margin: 0;
     }
     .avatar {
         float: left;
-        height: 40px;
-        width: 40px;
+        height: var(--h1size);
+        width: var(--h1size);
         margin-right: 15px;
     }
     #header {
-        margin: 15px 0;
+        margin: calc(var(--h1size) / 3) 0;
     }
 }
 
