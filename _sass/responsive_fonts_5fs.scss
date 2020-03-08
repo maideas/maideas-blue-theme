@@ -5,8 +5,8 @@
 
 :root {
     --h3size: calc(1rem * var(--fsfactor));
-    --h2size: calc(1rem * var(--fsfactor) * var(--h3size));
-    --h1size: calc(1rem * var(--fsfactor) * var(--h2size));
+    --h2size: calc(1rem * var(--fsfactor) * var(--fsfactor));
+    --h1size: calc(1rem * var(--fsfactor) * var(--fsfactor) * var(--fsfactor));
 }
 
 html, body {
