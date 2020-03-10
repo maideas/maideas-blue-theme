@@ -21,9 +21,9 @@ $(document).ready(function() {
     var vid = $(this)
     var p = vid.next()
     if (p.is("p")) {
-      div = vid.before('<div class="video"></div>')
-      vid.detach().appendTo(div)
-      p.detach().appendTo(div)
+      var div = vid.before('<div class="video"></div>')
+      vid.appendTo(div)
+      p.appendTo(div)
     }
   })
 
