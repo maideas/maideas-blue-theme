@@ -22,8 +22,8 @@ $(document).ready(function() {
     var p = vid.next()
     if (p.is("p")) {
       var div = vid.before('<div class="video"></div>')
-      vid.appendTo(div)
-      p.appendTo(div)
+      div.append(vid)
+      div.append(p)
     }
   })
 
