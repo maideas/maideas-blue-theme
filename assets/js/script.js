@@ -17,6 +17,8 @@ $(document).ready(function() {
     }
   });
 
+  $("video, video + p").wrapAll('<div class="video"></div>');
+
   /* add top-ul for CSS styling and "span" wrap top li texts */
   $("ul").each(function() {
     if (!$(this).parent().is("li")) {
