@@ -18,13 +18,14 @@ $(document).ready(function() {
   })
 
   $("video").each(function() {
-    if ($(this).next().is("p")) {
-      $(this).before('<div class="video">')
-      $(this).next().after('<div>')
+    var vid = $(this)
+    var p = vid.next()
+    if (p.is("p")) {
+      div = vid.before('<div class="video"></div>')
+      vid.appendTo(div)
+      p.appendTo(div)
     }
   })
-
-  //$("video, video + p").wrapAll('<div class="video"></div>');
 
   /* add top-ul for CSS styling and "span" wrap top li texts */
   $("ul").each(function() {
