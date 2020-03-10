@@ -17,22 +17,6 @@ $(document).ready(function() {
     }
   });
 
-  /* make video paragraph styling possible */
-  $("video").each(function() {
-    var par = $(this).parent();
-    var parpar = $(this).parent().parent();
-    if (par.is("p")) {
-      par.before('<div class="clearfix"></div>');
-      par.addClass('video');
-    }
-    if (par.is("a")) {
-      if (parpar.is("p")) {
-        parpar.before('<div class="clearfix"></div>');
-        parpar.addClass('video');
-      }
-    }
-  });
-
   /* add top-ul for CSS styling and "span" wrap top li texts */
   $("ul").each(function() {
     if (!$(this).parent().is("li")) {
