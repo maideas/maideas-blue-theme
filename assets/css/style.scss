@@ -176,14 +176,16 @@ pre code {
 }
 
 /* ================================================== */
-/* images */
+/* images / videos */
 
-#content p.img {
+#content p.img,
+#content p.video {
     margin: 20px 0;
     font-size: 0.85em;
     text-align: center;
 
-    img {
+    img,
+    video {
         display: block;
         max-width: 100%;
         padding: 15px;
@@ -191,18 +193,6 @@ pre code {
         margin-bottom: 10px;
         box-shadow: 0px 0px 8px 0px var(--shadow);
     }
-}
-
-/* ================================================== */
-/* images */
-
-video {
-    display: block;
-    max-width: 100%;
-    padding: 15px;
-    margin: 0px auto;
-    margin-bottom: 10px;
-    box-shadow: 0px 0px 8px 0px var(--shadow);
 }
 
 /* ================================================== */
