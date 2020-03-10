@@ -18,9 +18,12 @@ $(document).ready(function() {
   })
 
   $("video").each(function() {
+    $(this).wrap('<div class="video"></div>')
+  })
+  $("div.video").each(function() {
     var p = $(this).next()
     if (p.is("p")) {
-      $(this).wrap('<div class="video"></div>').append(p)
+      $(this).append(p)
     }
   })
 
