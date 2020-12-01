@@ -1,3 +1,3 @@
 # maideas-theme
 
-Maideas Jekyll theme
+My First Jekyll Theme
